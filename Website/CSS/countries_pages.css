@@ -53,3 +53,59 @@ body{
 .previous:hover, .next:hover{
 	border: 3px solid gray;
 }
+
+.slide-img{
+    width: 100%;
+    height: 275px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.slide-img:hover{
+    box-shadow: 0 0 0 200px steelblue inset;
+}
+
+.slide-img a{
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 24px;
+    color: white;
+    opacity: 0;
+}
+
+.slide-img:hover a{
+    opacity: 1;
+    transform: scale(1);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.img-1{
+    background-image: url('../Images/Bulgaria_during_World_War_I.jpg');
+}
+
+.img-2{
+    background-image: url('../Images/Bulgaria_during_World_War_I.jpg')
+}
+
+.img-3{
+    background-image: url('../Images/Bulgaria_during_World_War_I.jpg')
+}
+
+.img-4{
+    background-image: url('../Images/Bulgaria_during_World_War_I.jpg')
+}
+@media(max-width: 1600px){
+    .container{
+        width: 100%;
+    }
+}
