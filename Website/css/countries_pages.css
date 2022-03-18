@@ -1,111 +1,100 @@
-*{
-    margin: 0;
-}
-
 body{
-    color: white;
-
-}
-
-#slider
-{
-    height: 275px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #81bbd4;
-
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+    background-color: white;
+    background-image: linear-gradient(45deg, white 0%, green 45%, red 50%);;
 }
 
 .container{
-    width: 1600px;
-    margin: auto;
-    height: 300px;
+    padding: 2rem;
+    padding-bottom: 400px;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
-.subcontainer{
-    width: 85%;
-    margin: auto;
+.top-section{
+    text-align: center;
+    padding: 4rem 0;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.controller{
-    display: flex;
-    justify-content: space-between;
+.timeline{
+    position: relative;
+    min-height: 150px;
 }
 
-#controls i{
-    color: white;
-    font-size: 16px;
+.line{
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 1px);
+    width: 2px;
+    top: -50px;
+    background-color: #fff;
+    display: none;
 }
 
-.previous, .next{
-    padding: 2px;
-    width: 30px;
-    cursor: pointer;
+.line:before,
+.line::after{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1rem;
+    width: 1rem;
     border-radius: 50%;
-    outline: none;
-    transition: 0.7s ease in-out;
-    border: 3px solid white;
-    background-color: #5da7c7;
-    box-shadow: 0 0 5px #bbb;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.previous:hover, .next:hover{
-    border: 3px solid gray;
+.line:after{
+    bottom: 0;
 }
 
-.slide-img{
-    width: 100%;
-    height: 275px;
-    background-position: center;
-    background-size: cover;
-    cursor: pointer;
+.section{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    border-radius: 10px;
-}
-
-.slide-img:hover{
-    box-shadow: 0 0 0 200px steelblue inset;
-}
-
-.slide-img a{
-    text-decoration: none;
-    transform: scale(0);
-    transition: 0.8s;
-    font-size: 24px;
-    color: white;
     opacity: 0;
+    transform: translateX(-100%);
+    transition: 600ms ease;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+    padding: 1rem;
+    align-items: center;
+    min-height: 300px;
 }
 
-.slide-img:hover a{
+.section:nth-child(odd){
+    flex-direction: row-reverse;
+    transform: translateX(100%);
+}
+
+.bead{
+    position: absolute;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+.content{
+    width: calc(50% - 2rem);
+}
+
+.show-me:nth-child(n){
+    transform: none;
     opacity: 1;
-    transform: scale(1);
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-.img-1{
-    background-image: url('../Images/Bulgaria_during_World_War_I.jpg');
-}
-
-.img-2{
-    background-image: url('../Images/Bulgaria_during_World_War_I.jpg')
-}
-
-.img-3{
-    background-image: url('../Images/Bulgaria_during_World_War_I.jpg')
-}
-
-.img-4{
-    background-image: url('../Images/Bulgaria_during_World_War_I.jpg')
-}
-@media(max-width: 1600px){
-    .container{
-        width: 100%;
-    }
+h1{
+    font-weight: 400;
+    letter-spacing: 1px;
 }
