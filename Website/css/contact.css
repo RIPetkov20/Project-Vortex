@@ -6,11 +6,6 @@
 	font-family: 'Heebo', sans-serif;
 }
 
-nav{
-	display: flex;
-	position: relative;
-	
-}
 body{
 	display: flex;
 	justify-content: center;
