@@ -1,0 +1,101 @@
+.boxForMainText{
+    width:100%;
+    height:auto;
+    padding-bottom: 5vh;
+}
+
+.supportBox{
+    padding-top:1%;
+    width:62%;
+    height:100%;
+    margin:auto;
+}
+
+.titleOfMainText{
+    font-family: 'Nunito', sans-serif;
+    font-size:43px;
+    text-align:center;
+    margin-top:4%;
+}
+
+.contentOfTheBox{
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    text-align:center;
+}
+
+#readMore{
+    font-family: 'Nunito', sans-serif;
+    font-size:35px;
+    text-align:center;
+    color:#6f2232;
+    margin-top:5px;
+}
+
+#readMoreLink{
+    text-decoration:none;
+    color:#6f2232;
+}
+
+#spaceMain{
+    padding: 4% 0 4% 0;
+    width:100%;
+    height: auto;
+    background-color: #f2f2f0;
+    display: flex;
+}
+
+#spaceImage{
+    margin: auto;
+    width:80%;
+    height: auto;
+}
+
+#imageAndText{
+    width:100%;
+    height:auto;
+    padding-bottom: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#imageMain{
+    width:30%;
+    height:67vh;
+    margin: 7.5vh 0 7.5vh 0;
+    background-image: url("../Images/homePage_img.jpg");
+    background-size: contain;
+    background-repeat: round;
+}
+
+.textDiv{
+    width:50%;
+    height:auto;
+    margin-top:12vh;
+}
+
+.DivOfTitleOfTextDiv{
+    width:55%;
+    height:7vh;
+    margin:auto;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-left-color:#6f2232;
+    border-right-color:#6f2232;
+}
+
+.titleOfTextDiv{
+    font-size: 40px;
+	font-family: 'Nunito', sans-serif;
+    text-align:center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contentOfTheImageAndText{
+    font-size: 30px;
+	font-family: 'Nunito', sans-serif;
+    margin-top: 20px;
+    text-align:center;
+}
