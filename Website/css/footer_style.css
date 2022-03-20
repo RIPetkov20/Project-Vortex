@@ -57,7 +57,7 @@ footer{
 }
 
 .footer-left, .footer-col{
-    width: 23%;
+    width: 24%;
     padding: 0 15px;
 }
 
@@ -138,4 +138,17 @@ footer ul{
 .icons p{
     display: inline;
     text-transform: lowercase;
+}
+
+@media(max-width: 767px){
+    .footer-col, .footer-left {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px){
+    .footer-col , .footer-left{
+     width: 100%;
+    }
 }
