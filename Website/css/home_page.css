@@ -1,3 +1,5 @@
+/*first section style*/
+
 .boxForMainText{
     width:100%;
     height:auto;
@@ -37,6 +39,8 @@
     color:#6f2232;
 }
 
+/*second section style*/
+
 #spaceMain{
     padding: 4% 0 4% 0;
     width:100%;
@@ -50,6 +54,8 @@
     width:80%;
     height: auto;
 }
+
+/*third section style*/
 
 #imageAndText{
     width:100%;
@@ -72,7 +78,7 @@
 .textDiv{
     width:50%;
     height:auto;
-    margin-top:12vh;
+    margin-top:17vh;
 }
 
 .DivOfTitleOfTextDiv{
@@ -98,4 +104,89 @@
 	font-family: 'Nunito', sans-serif;
     margin-top: 20px;
     text-align:center;
+}
+
+/*responsive style*/
+
+@media screen and (max-width: 1200px){
+
+	#imageMain{
+        width:50%;
+        margin-left: 25%;
+    }
+
+    .textDiv{
+        width:85%;
+        margin-left: 7.5%;
+        margin-top:10vh;
+    }
+
+    #imageAndText{
+        display: block;
+    }
+
+    .titleOfTextDiv{
+        font-size: 35px;
+    }
+
+    .DivOfTitleOfTextDiv{
+        height:6vh;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+	.titleOfMainText{
+        font-size:40px;
+    }
+
+    .contentOfTheBox{
+        font-size: 26px;
+    }
+
+    .supportBox{
+        width:75%;
+    }
+
+    #readMore{
+        font-size:33px;
+    }
+
+    .contentOfTheImageAndText{
+        font-size: 28px;
+    }
+
+    #imageMain{
+        width:60%;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 730px){
+
+    .contentOfTheBox{
+        font-size: 24.5px;
+    }
+
+    .titleOfMainText{
+        font-size:32px;
+    }
+
+    .contentOfTheImageAndText{
+        font-size: 25px;
+    }
+
+    .titleOfTextDiv{
+        font-size: 30px;
+    }
+
+    .DivOfTitleOfTextDiv{
+        height:5vh;
+    }
+
+    #imageMain{
+        width:70%;
+        margin-left: 15%;
+        height: 55vh;
+    }
 }
