@@ -4,17 +4,21 @@
 }
 
 body{
-    background-color: #01171b;
+    background-color: #b2cacf;
 }
 
 svg path{
-    fill: #00394f;
+    fill: #4d7934;
     stroke: #eee;
     stroke-width: .25;
 }
 
 svg path:hover{
-    fill: #006284;
+    fill: #5fa738;
     transition: 0.6s;
     cursor: pointer;
+}
+
+section{
+    padding: 30px 0 50px 0;
 }
