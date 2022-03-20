@@ -48,7 +48,8 @@ section::after{
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-top: 40px 0;
+	margin-top: 40px;
+	margin-bottom: 100px;
 }
 
 .container .card{
@@ -87,6 +88,7 @@ section::after{
 	border-radius: 50%;
 	overflow: hidden;
 	border: 10px solid rgba(0,0,0,0.25);
+	margin-bottom: 10px;
 }
 
 .container .card .content .imgBox img{
@@ -149,8 +151,4 @@ section::after{
 	padding: 10px;
 	text-align: center;
 	transition: height 2s;
-}
-
-.messageBox:hover{
-	height: 50px;
 }
