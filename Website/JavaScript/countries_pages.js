@@ -1,3 +1,4 @@
+//call timeline function
 function qs(selector, all = false) {
     return all ? document.querySelectorAll(selector) : document.querySelector(selector)
 }
@@ -12,6 +13,7 @@ let full = false;
 let set = 0;
 const targetY = window.innerHeight * 0.8;
 
+//when scrolling down display timeline information
 function scrollHandler(e){
     const{
         scrollY
@@ -19,7 +21,7 @@ function scrollHandler(e){
     up = scrollY < prevScrollY;
     down = !up;
     const timelineRect = timeline.getBoundingClientRect();
-    const lineRect = line.getBoundingClientRect(); //CONST LINEHEIGHT = lineRect.bottom - lineRect.top
+    const lineRect = line.getBoundingClientRect();
 
     const dist = targetY - timelineRect.top
     console.log(dist);
@@ -35,7 +37,6 @@ function scrollHandler(e){
     }
 
     sections.forEach(item => {
-        //console.log(items);
         const rect = item.getBoundingClientRect();
 
         if(rect.top + item.offsetHeight / 5 < targetY) {

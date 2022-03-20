@@ -56,6 +56,22 @@ nav{
     color: #000;
 }
 
+/*hover animation*/
+
+.nav-links .i::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #913848;
+    display: block;
+    margin: auto;
+    transition: 0.5s 0.2s ease-in;
+}
+
+.nav-links .i:hover::after{
+    width: 25%;
+}
+
 /*burgerIcon style*/
 
 .burger{
