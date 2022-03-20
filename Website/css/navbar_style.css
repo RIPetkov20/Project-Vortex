@@ -6,6 +6,8 @@
 	box-sizing: border-box;
 }
 
+/*Navigation Bar*/
+
 nav{
 	display: flex;
 	justify-content: space-around;
@@ -22,6 +24,8 @@ nav{
 #logo{
     width: 50%;
 }
+
+/*navigationBar-tabs style*/
 
 .nav-links{
 	display: flex;
@@ -52,6 +56,8 @@ nav{
     color: #000;
 }
 
+/*burgerIcon style*/
+
 .burger{
 	display: none;
 	cursor: pointer;
@@ -65,7 +71,7 @@ nav{
 	transition: all 0.3s ease;
 }
 
-
+/*responsive style*/
 
 @media screen and (max-width: 1200px){
 	.nav-links{
@@ -108,6 +114,8 @@ nav{
 .nav-active{
 	transform: translateX(0%);
 }
+
+/*navigationBar animation*/
 
 @keyframes navLinkFade{
 	from{

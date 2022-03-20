@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Footer */
 
 footer{
     position: static;
@@ -28,6 +24,8 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/*footer columns*/
 
 .footer-left h3{
     color: #ffff;
@@ -140,7 +138,9 @@ footer ul{
     text-transform: lowercase;
 }
 
-@media(max-width: 767px){
+/*responsive style*/
+
+@media(max-width: 800px){
     .footer-col, .footer-left {
     width: 50%;
     margin-bottom: 30px;

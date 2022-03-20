@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 
-*{
-	margin: 0;
-	padding: 0;
-	font-family: 'Heebo', sans-serif;
-}
-
 body{
 	display: flex;
 	justify-content: center;
@@ -13,8 +7,10 @@ body{
 	flex-wrap: wrap;
 	background: #bab1c22f;
 	min-height: 100%;
-	
+	font-family: 'Heebo', sans-serif;
 }
+
+/*contentBox style*/
 
 section{
 	position: relative;
@@ -51,6 +47,8 @@ section::after{
 	margin-top: 40px;
 	margin-bottom: 100px;
 }
+
+/*cards style*/
 
 .container .card{
 	position: relative;
